@@ -1,0 +1,11 @@
+unnamed_net8	R_1-2 PNP_1-3 NPN_1-3 
+unnamed_net7	R_1-1 OPA_1-6 
+unnamed_net6	R_102-2 Q?-3 NPN_102-3 
+unnamed_net5	R_102-1 OPA_102-6 
+vee	PNP_1-1 OPA_1-4 Q?-1 OPA_102-4 power101-3 
+vcc	NPN_1-1 OPA_1-7 NPN_102-1 OPA_102-7 power101-1 
+unnamed_net4	U?-? power101-2 
+unnamed_net3	PNP_1-2 NPN_1-2 OPA_1-2 Q?-2 NPN_102-2 OPA_102-2 CONN?-1 
+unnamed_net2	U?-? CONN?-2 
+signal_in	OPA_1-3 OPA_102-3 CONN?-1 
+unnamed_net1	U?-? CONN?-2 
