@@ -338,3 +338,47 @@ netname=mid:2
 T 43000 46000 5 10 0 0 0 0 1
 value=mid
 }
+C 41700 45500 1 0 0 nc.sym
+{
+T 41800 47000 5 8 0 0 0 0 1
+value=NoConnection
+T 41800 47800 5 8 0 0 0 0 1
+device=DRC_Directive
+T 41800 46600 5 8 0 0 0 0 1
+symversion=1.0
+T 41800 46800 5 8 0 0 0 0 1
+footprint=none
+}
+C 41300 45500 1 0 0 nc.sym
+{
+T 41400 47000 5 8 0 0 0 0 1
+value=NoConnection
+T 41400 47800 5 8 0 0 0 0 1
+device=DRC_Directive
+T 41400 46600 5 8 0 0 0 0 1
+symversion=1.0
+T 41400 46800 5 8 0 0 0 0 1
+footprint=none
+}
+C 41700 42300 1 0 0 nc.sym
+{
+T 41800 43800 5 8 0 0 0 0 1
+value=NoConnection
+T 41800 44600 5 8 0 0 0 0 1
+device=DRC_Directive
+T 41800 43400 5 8 0 0 0 0 1
+symversion=1.0
+T 41800 43600 5 8 0 0 0 0 1
+footprint=none
+}
+C 41500 42500 1 180 0 nc.sym
+{
+T 41400 41000 5 8 0 0 180 0 1
+value=NoConnection
+T 41400 40200 5 8 0 0 180 0 1
+device=DRC_Directive
+T 41400 41400 5 8 0 0 180 0 1
+symversion=1.0
+T 41400 41200 5 8 0 0 180 0 1
+footprint=none
+}
