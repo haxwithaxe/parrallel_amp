@@ -7,7 +7,7 @@ device=BNC
 T 40600 43800 5 10 0 1 0 0 1
 footprint=BNC_LAY
 T 40600 44600 5 10 1 1 0 0 1
-refdes=BNC?
+refdes=BNC1
 T 40600 43800 5 10 0 1 0 0 1
 class=IO
 T 40600 43800 5 10 0 1 0 0 1
@@ -20,7 +20,7 @@ device=BNC
 T 46100 43800 5 10 0 1 0 0 1
 footprint=BNC_LAY
 T 46100 44600 5 10 1 1 0 6 1
-refdes=BNC?
+refdes=BNC2
 T 46100 43800 5 10 0 1 0 6 1
 class=IO
 T 46100 43800 5 10 0 1 0 6 1
@@ -122,7 +122,7 @@ device=CONNECTOR_3
 T 49600 45400 5 10 0 0 0 0 1
 footprint=SIP3
 T 49600 46500 5 10 1 1 0 6 1
-refdes=CONN?
+refdes=CONN1
 }
 C 44300 42800 1 270 1 npn-3.sym
 {
@@ -130,8 +130,10 @@ T 44800 43700 5 10 0 0 270 6 1
 device=NPN_TRANSISTOR
 T 44750 43700 5 10 0 1 270 6 1
 numslots=0
-T 44300 42800 5 10 0 0 0 0 1
-footprint=TO126S
+T 44300 42800 5 10 0 1 0 0 1
+footprint=T092NPN
+T 44300 42800 5 10 1 1 0 0 1
+refdes=NPN2
 }
 C 44300 42800 1 270 0 pnp-3.sym
 {
@@ -140,9 +142,9 @@ device=PNP_TRANSISTOR
 T 44700 41900 5 10 0 1 270 0 1
 numslots=0
 T 44800 41900 5 10 1 1 270 0 1
-refdes=Q?
+refdes=PNP2
 T 44300 42800 5 10 0 0 0 0 1
-footprint=TO126S
+footprint=T092NPN
 }
 N 44300 43400 44300 42200 4
 {
@@ -230,9 +232,9 @@ device=NPN_TRANSISTOR
 T 44750 45100 5 10 0 1 270 0 1
 numslots=0
 T 44800 45100 5 10 1 1 270 0 1
-refdes=NPN?
+refdes=NPN1
 T 44300 46000 5 10 0 0 0 0 1
-footprint=TO126S
+footprint=T092NPN
 }
 C 44300 46000 1 270 1 pnp-3.sym
 {
@@ -241,9 +243,9 @@ device=PNP_TRANSISTOR
 T 44700 46900 5 10 0 1 270 6 1
 numslots=0
 T 44800 46900 5 10 1 1 270 6 1
-refdes=PNP?
+refdes=PNP1
 T 44300 46000 5 10 0 0 0 0 1
-footprint=TO126S
+footprint=T092NPN
 }
 N 44300 45400 44300 46600 4
 {
@@ -289,7 +291,7 @@ net=signal_in:1
 C 41100 45600 1 0 0 OpAmp-DIP8-1.sym
 {
 T 41800 46250 5 10 1 1 0 0 1
-refdes=U?
+refdes=U1
 T 41100 47800 5 10 0 0 0 0 1
 device=OpAmp-DIP8
 T 41100 46600 5 10 0 0 0 0 1
@@ -298,7 +300,7 @@ footprint=DIP8
 C 41100 42400 1 0 0 OpAmp-DIP8-1.sym
 {
 T 41800 43050 5 10 1 1 0 0 1
-refdes=U?
+refdes=U2
 T 41100 44600 5 10 0 0 0 0 1
 device=OpAmp-DIP8
 T 41100 43400 5 10 0 0 0 0 1
@@ -308,17 +310,17 @@ C 42100 42700 1 0 0 resistor-1.sym
 {
 T 42400 43100 5 10 0 0 0 0 1
 device=RESISTOR
-T 42300 43000 5 10 1 1 0 0 1
-refdes=R?
 T 42100 42700 5 10 0 0 0 0 1
 footprint=ACY1000
+T 42100 42700 5 10 1 0 0 0 1
+refdes=R2
 }
 C 42100 45900 1 0 0 resistor-1.sym
 {
 T 42400 46300 5 10 0 0 0 0 1
 device=RESISTOR
 T 42300 46200 5 10 1 1 0 0 1
-refdes=R?
+refdes=R1
 T 42100 45900 5 10 0 2 0 0 1
 footprint=ACY1000
 }
@@ -336,47 +338,33 @@ netname=mid:2
 T 43000 46000 5 10 0 0 0 0 1
 value=mid
 }
-C 41700 45500 1 0 0 nc.sym
+C 41600 42000 1 0 0 nc-bottom-1.sym
 {
-T 41800 47000 5 8 0 0 0 0 1
+T 41600 42600 5 10 0 0 0 0 1
 value=NoConnection
-T 41800 47800 5 8 0 0 0 0 1
+T 41600 43000 5 10 0 0 0 0 1
 device=DRC_Directive
-T 41800 46600 5 8 0 0 0 0 1
-symversion=1.0
-T 41800 46800 5 8 0 0 0 0 1
-footprint=none
 }
-C 41300 45500 1 0 0 nc.sym
+C 41200 42000 1 0 0 nc-bottom-1.sym
 {
-T 41400 47000 5 8 0 0 0 0 1
+T 41200 42600 5 10 0 0 0 0 1
 value=NoConnection
-T 41400 47800 5 8 0 0 0 0 1
+T 41200 43000 5 10 0 0 0 0 1
 device=DRC_Directive
-T 41400 46600 5 8 0 0 0 0 1
-symversion=1.0
-T 41400 46800 5 8 0 0 0 0 1
-footprint=none
 }
-C 41700 42300 1 0 0 nc.sym
+C 41200 45200 1 0 0 nc-bottom-1.sym
 {
-T 41800 43800 5 8 0 0 0 0 1
+T 41200 45800 5 10 0 0 0 0 1
 value=NoConnection
-T 41800 44600 5 8 0 0 0 0 1
+T 41200 46200 5 10 0 0 0 0 1
 device=DRC_Directive
-T 41800 43400 5 8 0 0 0 0 1
-symversion=1.0
-T 41800 43600 5 8 0 0 0 0 1
-footprint=none
 }
-C 41500 42500 1 180 0 nc.sym
+C 41600 45200 1 0 0 nc-bottom-1.sym
 {
-T 41400 41000 5 8 0 0 180 0 1
+T 41600 45800 5 10 0 0 0 0 1
 value=NoConnection
-T 41400 40200 5 8 0 0 180 0 1
+T 41600 46200 5 10 0 0 0 0 1
 device=DRC_Directive
-T 41400 41400 5 8 0 0 180 0 1
-symversion=1.0
-T 41400 41200 5 8 0 0 180 0 1
-footprint=none
 }
+schematics parallel_amp.sch
+output-name parallel_amp
