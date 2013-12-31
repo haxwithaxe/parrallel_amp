@@ -95,24 +95,24 @@ value=vee
 T 47300 45300 5 10 0 1 0 0 1
 refdes=Vee
 }
-C 47900 46000 1 90 0 vcc-2.sym
+C 47900 45700 1 90 0 vcc-2.sym
 {
-T 47900 46000 5 10 0 1 90 0 1
+T 47900 45700 5 10 0 1 90 0 1
 net=vcc:1
-T 47900 46000 5 10 0 1 0 0 1
+T 47900 45700 5 10 0 1 0 0 1
 value=vcc
-T 47900 46000 5 10 1 1 0 0 1
+T 47900 45700 5 10 1 1 0 0 1
 refdes=Vcc
 }
-C 47600 45700 1 270 1 chassis.sym
+C 47600 46000 1 270 1 chassis.sym
 {
-T 47600 45700 5 10 0 1 270 6 1
+T 47600 46000 5 10 0 1 270 6 1
 net=gnd:1
-T 47600 45700 5 10 0 1 0 0 1
+T 47600 46000 5 10 0 1 0 0 1
 netname=gnd
-T 47600 45700 5 10 0 0 0 0 1
+T 47600 46000 5 10 0 0 0 0 1
 value=gnd
-T 47600 45700 5 10 1 1 0 0 1
+T 47600 46000 5 10 1 1 0 0 1
 refdes=GND
 }
 C 49600 45400 1 0 1 connector3-1.sym
@@ -131,7 +131,7 @@ device=NPN_TRANSISTOR
 T 44750 43700 5 10 0 1 270 6 1
 numslots=0
 T 44300 42800 5 10 0 1 0 0 1
-footprint=T092NPN
+footprint=HC49U_3
 T 44300 42800 5 10 1 1 0 0 1
 refdes=NPN2
 }
@@ -144,7 +144,7 @@ numslots=0
 T 44800 41900 5 10 1 1 270 0 1
 refdes=PNP2
 T 44300 42800 5 10 0 0 0 0 1
-footprint=T092NPN
+footprint=HC49U_3
 }
 N 44300 43400 44300 42200 4
 {
@@ -234,7 +234,7 @@ numslots=0
 T 44800 45100 5 10 1 1 270 0 1
 refdes=NPN1
 T 44300 46000 5 10 0 0 0 0 1
-footprint=T092NPN
+footprint=HC49U_3
 }
 C 44300 46000 1 270 1 pnp-3.sym
 {
@@ -245,7 +245,7 @@ numslots=0
 T 44800 46900 5 10 1 1 270 6 1
 refdes=PNP1
 T 44300 46000 5 10 0 0 0 0 1
-footprint=T092NPN
+footprint=HC49U_3
 }
 N 44300 45400 44300 46600 4
 {
@@ -308,11 +308,11 @@ footprint=DIP8
 }
 C 42100 42700 1 0 0 resistor-1.sym
 {
-T 42400 43100 5 10 0 0 0 0 1
+T 42400 43100 5 10 0 1 0 0 1
 device=RESISTOR
-T 42100 42700 5 10 0 0 0 0 1
-footprint=ACY1000
-T 42100 42700 5 10 1 0 0 0 1
+T 42100 42700 5 10 0 1 0 0 1
+footprint=ACY400
+T 42100 42700 5 10 1 1 0 0 1
 refdes=R2
 }
 C 42100 45900 1 0 0 resistor-1.sym
@@ -322,7 +322,7 @@ device=RESISTOR
 T 42300 46200 5 10 1 1 0 0 1
 refdes=R1
 T 42100 45900 5 10 0 2 0 0 1
-footprint=ACY1000
+footprint=ACY400
 }
 N 43000 42800 44300 42800 4
 {
@@ -366,5 +366,3 @@ value=NoConnection
 T 41600 46200 5 10 0 0 0 0 1
 device=DRC_Directive
 }
-schematics parallel_amp.sch
-output-name parallel_amp
